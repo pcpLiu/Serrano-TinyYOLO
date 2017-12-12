@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultShowVC" customModule="SerranoYOLO" customModuleProvider="target">
+            <connections>
+                <outlet property="doneButton" destination="UPt-EV-TcW" id="PTK-PN-t4u"/>
+                <outlet property="imageShowView" destination="WI5-sB-hTV" id="9aT-yg-Bjr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UPt-EV-TcW">
+                    <rect key="frame" x="607" y="10" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="1oP-Hr-MFv"/>
+                        <constraint firstAttribute="height" constant="50" id="mhY-NM-Kpa"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Done">
+                                <attributes>
+                                    <color key="NSBackgroundColor" red="0.94960319599999998" green="0.96734108730000001" blue="0.89161690000000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="Helvetica-Light"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WI5-sB-hTV">
+                    <rect key="frame" x="0.0" y="0.0" width="567" height="375"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WI5-sB-hTV" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="9Qz-sF-z9k"/>
+                <constraint firstItem="WI5-sB-hTV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PCU-fB-6QQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UPt-EV-TcW" secondAttribute="trailing" constant="10" id="QB3-pN-H3T"/>
+                <constraint firstAttribute="trailing" secondItem="WI5-sB-hTV" secondAttribute="trailing" constant="100" id="jkW-6g-7aQ"/>
+                <constraint firstItem="WI5-sB-hTV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="khE-Cs-Ce3"/>
+                <constraint firstItem="UPt-EV-TcW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="qmo-Qv-2Rm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

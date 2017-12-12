@@ -1,0 +1,9 @@
+serrano.xcodeproj/xcuserdata
+.testing
+xcuserdata
+
+*.coverage.txt
+*.xccoverage.plist
+build/
+DerivedData/
+Pods/

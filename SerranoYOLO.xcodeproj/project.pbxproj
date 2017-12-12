@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B7A17EB3D47FDE2D27DA4B6 /* Pods_SerranoYOLOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C2A5398197351D7843CC1 /* Pods_SerranoYOLOTests.framework */; };
+		D43A80AD1FC65BA5002BA300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43A80AC1FC65BA5002BA300 /* AppDelegate.swift */; };
+		D43A80B41FC65BA5002BA300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D43A80B31FC65BA5002BA300 /* Assets.xcassets */; };
+		D43A80B71FC65BA5002BA300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43A80B51FC65BA5002BA300 /* LaunchScreen.storyboard */; };
+		D43A80D11FC65E8B002BA300 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43A80CF1FC65E8B002BA300 /* MainVC.swift */; };
+		D43A80D21FC65E8B002BA300 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D43A80D01FC65E8B002BA300 /* MainVC.xib */; };
+		D441513A1FD348AA00C8AB76 /* COCO_classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44151391FD348AA00C8AB76 /* COCO_classes.swift */; };
+		D44151411FD398EA00C8AB76 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44151401FD398EA00C8AB76 /* BoundingBox.swift */; };
+		D445488F1FD62C8B003396AC /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D445488E1FD62C8A003396AC /* extension.swift */; };
+		D452841F1FD1B2460045DFFE /* batchnorm_1.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D45284171FD1B2450045DFFE /* batchnorm_1.fbs */; };
+		D45284201FD1B2460045DFFE /* batchnorm_3.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D45284181FD1B2450045DFFE /* batchnorm_3.fbs */; };
+		D45284211FD1B2460045DFFE /* batchnorm_4.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D45284191FD1B2450045DFFE /* batchnorm_4.fbs */; };
+		D45284221FD1B2460045DFFE /* batchnorm_8.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D452841A1FD1B2450045DFFE /* batchnorm_8.fbs */; };
+		D45284231FD1B2460045DFFE /* batchnorm_7.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D452841B1FD1B2450045DFFE /* batchnorm_7.fbs */; };
+		D45284241FD1B2460045DFFE /* batchnorm_2.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D452841C1FD1B2450045DFFE /* batchnorm_2.fbs */; };
+		D45284251FD1B2460045DFFE /* batchnorm_6.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D452841D1FD1B2450045DFFE /* batchnorm_6.fbs */; };
+		D45284261FD1B2460045DFFE /* batchnorm_5.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D452841E1FD1B2450045DFFE /* batchnorm_5.fbs */; };
+		D45284291FD1E6B50045DFFE /* ResultShowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45284271FD1E6B50045DFFE /* ResultShowVC.swift */; };
+		D452842A1FD1E6B50045DFFE /* ResultShowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D45284281FD1E6B50045DFFE /* ResultShowVC.xib */; };
+		D46E47871FC9E3F80088730C /* conv_9_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E477D1FC9E3F80088730C /* conv_9_k.fbs */; };
+		D46E47881FC9E3F80088730C /* conv_8_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E477E1FC9E3F80088730C /* conv_8_k.fbs */; };
+		D46E47891FC9E3F80088730C /* conv_6_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E477F1FC9E3F80088730C /* conv_6_k.fbs */; };
+		D46E478A1FC9E3F80088730C /* conv_4_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47801FC9E3F80088730C /* conv_4_k.fbs */; };
+		D46E478B1FC9E3F80088730C /* conv_2_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47811FC9E3F80088730C /* conv_2_k.fbs */; };
+		D46E478C1FC9E3F80088730C /* conv_5_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47821FC9E3F80088730C /* conv_5_k.fbs */; };
+		D46E478D1FC9E3F80088730C /* conv_7_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47831FC9E3F80088730C /* conv_7_k.fbs */; };
+		D46E478E1FC9E3F80088730C /* conv_3_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47841FC9E3F80088730C /* conv_3_k.fbs */; };
+		D46E478F1FC9E3F80088730C /* conv_1_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47851FC9E3F80088730C /* conv_1_k.fbs */; };
+		D46E47901FC9E3F80088730C /* conv_9_b.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47861FC9E3F80088730C /* conv_9_b.fbs */; };
+		D46E47911FC9E4150088730C /* conv_9_b.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47861FC9E3F80088730C /* conv_9_b.fbs */; };
+		D46E47921FC9E4170088730C /* conv_1_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47851FC9E3F80088730C /* conv_1_k.fbs */; };
+		D46E47931FC9E4180088730C /* conv_3_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47841FC9E3F80088730C /* conv_3_k.fbs */; };
+		D46E47941FC9E41A0088730C /* conv_7_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47831FC9E3F80088730C /* conv_7_k.fbs */; };
+		D46E47951FC9E41B0088730C /* conv_5_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47821FC9E3F80088730C /* conv_5_k.fbs */; };
+		D46E47961FC9E41D0088730C /* conv_2_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47811FC9E3F80088730C /* conv_2_k.fbs */; };
+		D46E47971FC9E41F0088730C /* conv_4_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E47801FC9E3F80088730C /* conv_4_k.fbs */; };
+		D46E47981FC9E4200088730C /* conv_6_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E477F1FC9E3F80088730C /* conv_6_k.fbs */; };
+		D46E47991FC9E4220088730C /* conv_8_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E477E1FC9E3F80088730C /* conv_8_k.fbs */; };
+		D46E479A1FC9E4240088730C /* conv_9_k.fbs in Resources */ = {isa = PBXBuildFile; fileRef = D46E477D1FC9E3F80088730C /* conv_9_k.fbs */; };
+		D46E479C1FC9E4920088730C /* yolo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46E479B1FC9E4920088730C /* yolo.swift */; };
+		D46E47A31FCA676A0088730C /* YoloModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46E47A21FCA676A0088730C /* YoloModelTest.swift */; };
+		D46E47A81FCA69860088730C /* Pods_SerranoYOLO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43E90343044B01BA525AA65 /* Pods_SerranoYOLO.framework */; };
+		D46E47B01FCB09F90088730C /* photoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46E47AE1FCB09F90088730C /* photoVC.swift */; };
+		D46E47B11FCB09F90088730C /* photoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D46E47AF1FCB09F90088730C /* photoVC.xib */; };
+		D4B20FD31FD5A2CC00B53F4B /* VOC_classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B20FD21FD5A2CC00B53F4B /* VOC_classes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D43A80BE1FC65BA5002BA300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D43A80A11FC65BA5002BA300 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D43A80A81FC65BA5002BA300;
+			remoteInfo = SerranoYOLO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1284B7F890C9D10F72F71690 /* Pods-SerranoYOLOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SerranoYOLOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SerranoYOLOTests/Pods-SerranoYOLOTests.release.xcconfig"; sourceTree = "<group>"; };
+		1A9C2A5398197351D7843CC1 /* Pods_SerranoYOLOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SerranoYOLOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35261EC66A930EDDD535FFAA /* Pods-SerranoYOLO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SerranoYOLO.release.xcconfig"; path = "Pods/Target Support Files/Pods-SerranoYOLO/Pods-SerranoYOLO.release.xcconfig"; sourceTree = "<group>"; };
+		37B0208928DAB19BCFF3C37B /* Pods-SerranoYOLO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SerranoYOLO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SerranoYOLO/Pods-SerranoYOLO.debug.xcconfig"; sourceTree = "<group>"; };
+		61407043EFE3CD4AB9B5DC2D /* Pods-SerranoYOLOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SerranoYOLOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SerranoYOLOTests/Pods-SerranoYOLOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D43A80A91FC65BA5002BA300 /* SerranoYOLO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerranoYOLO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D43A80AC1FC65BA5002BA300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D43A80B31FC65BA5002BA300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D43A80B61FC65BA5002BA300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D43A80B81FC65BA5002BA300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D43A80BD1FC65BA5002BA300 /* SerranoYOLOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SerranoYOLOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D43A80C31FC65BA5002BA300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D43A80CF1FC65E8B002BA300 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		D43A80D01FC65E8B002BA300 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		D44151391FD348AA00C8AB76 /* COCO_classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COCO_classes.swift; sourceTree = "<group>"; };
+		D44151401FD398EA00C8AB76 /* BoundingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		D445488E1FD62C8A003396AC /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		D45284171FD1B2450045DFFE /* batchnorm_1.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = batchnorm_1.fbs; sourceTree = "<group>"; };
+		D45284181FD1B2450045DFFE /* batchnorm_3.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = batchnorm_3.fbs; sourceTree = "<group>"; };
+		D45284191FD1B2450045DFFE /* batchnorm_4.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = batchnorm_4.fbs; sourceTree = "<group>"; };
+		D452841A1FD1B2450045DFFE /* batchnorm_8.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = batchnorm_8.fbs; sourceTree = "<group>"; };
+		D452841B1FD1B2450045DFFE /* batchnorm_7.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = batchnorm_7.fbs; sourceTree = "<group>"; };
+		D452841C1FD1B2450045DFFE /* batchnorm_2.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = batchnorm_2.fbs; sourceTree = "<group>"; };
+		D452841D1FD1B2450045DFFE /* batchnorm_6.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = batchnorm_6.fbs; sourceTree = "<group>"; };
+		D452841E1FD1B2450045DFFE /* batchnorm_5.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = batchnorm_5.fbs; sourceTree = "<group>"; };
+		D45284271FD1E6B50045DFFE /* ResultShowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultShowVC.swift; sourceTree = "<group>"; };
+		D45284281FD1E6B50045DFFE /* ResultShowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultShowVC.xib; sourceTree = "<group>"; };
+		D46E477D1FC9E3F80088730C /* conv_9_k.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = conv_9_k.fbs; sourceTree = "<group>"; };
+		D46E477E1FC9E3F80088730C /* conv_8_k.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = conv_8_k.fbs; sourceTree = "<group>"; };
+		D46E477F1FC9E3F80088730C /* conv_6_k.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = conv_6_k.fbs; sourceTree = "<group>"; };
+		D46E47801FC9E3F80088730C /* conv_4_k.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = conv_4_k.fbs; sourceTree = "<group>"; };
+		D46E47811FC9E3F80088730C /* conv_2_k.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = conv_2_k.fbs; sourceTree = "<group>"; };
+		D46E47821FC9E3F80088730C /* conv_5_k.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = conv_5_k.fbs; sourceTree = "<group>"; };
+		D46E47831FC9E3F80088730C /* conv_7_k.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = conv_7_k.fbs; sourceTree = "<group>"; };
+		D46E47841FC9E3F80088730C /* conv_3_k.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = conv_3_k.fbs; sourceTree = "<group>"; };
+		D46E47851FC9E3F80088730C /* conv_1_k.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = conv_1_k.fbs; sourceTree = "<group>"; };
+		D46E47861FC9E3F80088730C /* conv_9_b.fbs */ = {isa = PBXFileReference; lastKnownFileType = file; path = conv_9_b.fbs; sourceTree = "<group>"; };
+		D46E479B1FC9E4920088730C /* yolo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yolo.swift; sourceTree = "<group>"; };
+		D46E47A21FCA676A0088730C /* YoloModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloModelTest.swift; sourceTree = "<group>"; };
+		D46E47A41FCA69620088730C /* Serrano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Serrano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46E47AE1FCB09F90088730C /* photoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoVC.swift; sourceTree = "<group>"; };
+		D46E47AF1FCB09F90088730C /* photoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = photoVC.xib; sourceTree = "<group>"; };
+		D4B20FD21FD5A2CC00B53F4B /* VOC_classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOC_classes.swift; sourceTree = "<group>"; };
+		E43E90343044B01BA525AA65 /* Pods_SerranoYOLO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SerranoYOLO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D43A80A61FC65BA5002BA300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46E47A81FCA69860088730C /* Pods_SerranoYOLO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D43A80BA1FC65BA5002BA300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7A17EB3D47FDE2D27DA4B6 /* Pods_SerranoYOLOTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D40386F6BDD78EE7D53229D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37B0208928DAB19BCFF3C37B /* Pods-SerranoYOLO.debug.xcconfig */,
+				35261EC66A930EDDD535FFAA /* Pods-SerranoYOLO.release.xcconfig */,
+				61407043EFE3CD4AB9B5DC2D /* Pods-SerranoYOLOTests.debug.xcconfig */,
+				1284B7F890C9D10F72F71690 /* Pods-SerranoYOLOTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AFC5C1CF96D7E57D6A22791C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E43E90343044B01BA525AA65 /* Pods_SerranoYOLO.framework */,
+				1A9C2A5398197351D7843CC1 /* Pods_SerranoYOLOTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D43A80A01FC65BA5002BA300 = {
+			isa = PBXGroup;
+			children = (
+				D46E47A41FCA69620088730C /* Serrano.framework */,
+				D43A80AB1FC65BA5002BA300 /* SerranoYOLO */,
+				D43A80C01FC65BA5002BA300 /* SerranoYOLOTests */,
+				D43A80AA1FC65BA5002BA300 /* Products */,
+				2D40386F6BDD78EE7D53229D /* Pods */,
+				AFC5C1CF96D7E57D6A22791C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D43A80AA1FC65BA5002BA300 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D43A80A91FC65BA5002BA300 /* SerranoYOLO.app */,
+				D43A80BD1FC65BA5002BA300 /* SerranoYOLOTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D43A80AB1FC65BA5002BA300 /* SerranoYOLO */ = {
+			isa = PBXGroup;
+			children = (
+				D46E47AD1FCB09D70088730C /* photo */,
+				D46E477B1FC9E3480088730C /* model */,
+				D43A80CE1FC65C4C002BA300 /* support files */,
+				D43A80CC1FC65C35002BA300 /* main */,
+				D43A80B51FC65BA5002BA300 /* LaunchScreen.storyboard */,
+			);
+			path = SerranoYOLO;
+			sourceTree = "<group>";
+		};
+		D43A80C01FC65BA5002BA300 /* SerranoYOLOTests */ = {
+			isa = PBXGroup;
+			children = (
+				D43A80C31FC65BA5002BA300 /* Info.plist */,
+				D46E47A21FCA676A0088730C /* YoloModelTest.swift */,
+			);
+			path = SerranoYOLOTests;
+			sourceTree = "<group>";
+		};
+		D43A80CC1FC65C35002BA300 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				D43A80CF1FC65E8B002BA300 /* MainVC.swift */,
+				D43A80D01FC65E8B002BA300 /* MainVC.xib */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		D43A80CE1FC65C4C002BA300 /* support files */ = {
+			isa = PBXGroup;
+			children = (
+				D43A80B31FC65BA5002BA300 /* Assets.xcassets */,
+				D43A80B81FC65BA5002BA300 /* Info.plist */,
+				D43A80AC1FC65BA5002BA300 /* AppDelegate.swift */,
+			);
+			path = "support files";
+			sourceTree = "<group>";
+		};
+		D46E477B1FC9E3480088730C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D46E477C1FC9E3F80088730C /* weights */,
+				D46E479B1FC9E4920088730C /* yolo.swift */,
+				D44151391FD348AA00C8AB76 /* COCO_classes.swift */,
+				D44151401FD398EA00C8AB76 /* BoundingBox.swift */,
+				D4B20FD21FD5A2CC00B53F4B /* VOC_classes.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D46E477C1FC9E3F80088730C /* weights */ = {
+			isa = PBXGroup;
+			children = (
+				D46E477D1FC9E3F80088730C /* conv_9_k.fbs */,
+				D46E477E1FC9E3F80088730C /* conv_8_k.fbs */,
+				D46E477F1FC9E3F80088730C /* conv_6_k.fbs */,
+				D46E47801FC9E3F80088730C /* conv_4_k.fbs */,
+				D45284171FD1B2450045DFFE /* batchnorm_1.fbs */,
+				D452841C1FD1B2450045DFFE /* batchnorm_2.fbs */,
+				D45284181FD1B2450045DFFE /* batchnorm_3.fbs */,
+				D45284191FD1B2450045DFFE /* batchnorm_4.fbs */,
+				D452841E1FD1B2450045DFFE /* batchnorm_5.fbs */,
+				D452841D1FD1B2450045DFFE /* batchnorm_6.fbs */,
+				D452841B1FD1B2450045DFFE /* batchnorm_7.fbs */,
+				D452841A1FD1B2450045DFFE /* batchnorm_8.fbs */,
+				D46E47811FC9E3F80088730C /* conv_2_k.fbs */,
+				D46E47821FC9E3F80088730C /* conv_5_k.fbs */,
+				D46E47831FC9E3F80088730C /* conv_7_k.fbs */,
+				D46E47841FC9E3F80088730C /* conv_3_k.fbs */,
+				D46E47851FC9E3F80088730C /* conv_1_k.fbs */,
+				D46E47861FC9E3F80088730C /* conv_9_b.fbs */,
+			);
+			path = weights;
+			sourceTree = "<group>";
+		};
+		D46E47AD1FCB09D70088730C /* photo */ = {
+			isa = PBXGroup;
+			children = (
+				D445488E1FD62C8A003396AC /* extension.swift */,
+				D46E47AE1FCB09F90088730C /* photoVC.swift */,
+				D46E47AF1FCB09F90088730C /* photoVC.xib */,
+				D45284271FD1E6B50045DFFE /* ResultShowVC.swift */,
+				D45284281FD1E6B50045DFFE /* ResultShowVC.xib */,
+			);
+			path = photo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D43A80A81FC65BA5002BA300 /* SerranoYOLO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D43A80C61FC65BA5002BA300 /* Build configuration list for PBXNativeTarget "SerranoYOLO" */;
+			buildPhases = (
+				C298D18A1D8944E4625D1C18 /* [CP] Check Pods Manifest.lock */,
+				D43A80A51FC65BA5002BA300 /* Sources */,
+				D43A80A61FC65BA5002BA300 /* Frameworks */,
+				D43A80A71FC65BA5002BA300 /* Resources */,
+				B25F89A822FB2FDDF891BA69 /* [CP] Embed Pods Frameworks */,
+				ECD947CA9BBA3CA72869D919 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SerranoYOLO;
+			productName = SerranoYOLO;
+			productReference = D43A80A91FC65BA5002BA300 /* SerranoYOLO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D43A80BC1FC65BA5002BA300 /* SerranoYOLOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D43A80C91FC65BA5002BA300 /* Build configuration list for PBXNativeTarget "SerranoYOLOTests" */;
+			buildPhases = (
+				0C8E4BCFF4601E347CECF332 /* [CP] Check Pods Manifest.lock */,
+				D43A80B91FC65BA5002BA300 /* Sources */,
+				D43A80BA1FC65BA5002BA300 /* Frameworks */,
+				D43A80BB1FC65BA5002BA300 /* Resources */,
+				DED092A5FC92505EE0939149 /* [CP] Embed Pods Frameworks */,
+				7E75EC5E0365DC6C2F35B858 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D43A80BF1FC65BA5002BA300 /* PBXTargetDependency */,
+			);
+			name = SerranoYOLOTests;
+			productName = SerranoYOLOTests;
+			productReference = D43A80BD1FC65BA5002BA300 /* SerranoYOLOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D43A80A11FC65BA5002BA300 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Serrano;
+				TargetAttributes = {
+					D43A80A81FC65BA5002BA300 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+					};
+					D43A80BC1FC65BA5002BA300 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+						TestTargetID = D43A80A81FC65BA5002BA300;
+					};
+				};
+			};
+			buildConfigurationList = D43A80A41FC65BA5002BA300 /* Build configuration list for PBXProject "SerranoYOLO" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D43A80A01FC65BA5002BA300;
+			productRefGroup = D43A80AA1FC65BA5002BA300 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D43A80A81FC65BA5002BA300 /* SerranoYOLO */,
+				D43A80BC1FC65BA5002BA300 /* SerranoYOLOTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D43A80A71FC65BA5002BA300 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46E47891FC9E3F80088730C /* conv_6_k.fbs in Resources */,
+				D43A80D21FC65E8B002BA300 /* MainVC.xib in Resources */,
+				D452842A1FD1E6B50045DFFE /* ResultShowVC.xib in Resources */,
+				D46E47871FC9E3F80088730C /* conv_9_k.fbs in Resources */,
+				D43A80B71FC65BA5002BA300 /* LaunchScreen.storyboard in Resources */,
+				D45284221FD1B2460045DFFE /* batchnorm_8.fbs in Resources */,
+				D43A80B41FC65BA5002BA300 /* Assets.xcassets in Resources */,
+				D45284251FD1B2460045DFFE /* batchnorm_6.fbs in Resources */,
+				D452841F1FD1B2460045DFFE /* batchnorm_1.fbs in Resources */,
+				D45284231FD1B2460045DFFE /* batchnorm_7.fbs in Resources */,
+				D46E478A1FC9E3F80088730C /* conv_4_k.fbs in Resources */,
+				D46E478C1FC9E3F80088730C /* conv_5_k.fbs in Resources */,
+				D45284261FD1B2460045DFFE /* batchnorm_5.fbs in Resources */,
+				D46E478E1FC9E3F80088730C /* conv_3_k.fbs in Resources */,
+				D45284241FD1B2460045DFFE /* batchnorm_2.fbs in Resources */,
+				D46E478B1FC9E3F80088730C /* conv_2_k.fbs in Resources */,
+				D46E478F1FC9E3F80088730C /* conv_1_k.fbs in Resources */,
+				D45284201FD1B2460045DFFE /* batchnorm_3.fbs in Resources */,
+				D46E47881FC9E3F80088730C /* conv_8_k.fbs in Resources */,
+				D46E47B11FCB09F90088730C /* photoVC.xib in Resources */,
+				D45284211FD1B2460045DFFE /* batchnorm_4.fbs in Resources */,
+				D46E478D1FC9E3F80088730C /* conv_7_k.fbs in Resources */,
+				D46E47901FC9E3F80088730C /* conv_9_b.fbs in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D43A80BB1FC65BA5002BA300 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46E47911FC9E4150088730C /* conv_9_b.fbs in Resources */,
+				D46E47961FC9E41D0088730C /* conv_2_k.fbs in Resources */,
+				D46E47991FC9E4220088730C /* conv_8_k.fbs in Resources */,
+				D46E47981FC9E4200088730C /* conv_6_k.fbs in Resources */,
+				D46E47971FC9E41F0088730C /* conv_4_k.fbs in Resources */,
+				D46E479A1FC9E4240088730C /* conv_9_k.fbs in Resources */,
+				D46E47951FC9E41B0088730C /* conv_5_k.fbs in Resources */,
+				D46E47921FC9E4170088730C /* conv_1_k.fbs in Resources */,
+				D46E47941FC9E41A0088730C /* conv_7_k.fbs in Resources */,
+				D46E47931FC9E4180088730C /* conv_3_k.fbs in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C8E4BCFF4601E347CECF332 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SerranoYOLOTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E75EC5E0365DC6C2F35B858 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SerranoYOLOTests/Pods-SerranoYOLOTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B25F89A822FB2FDDF891BA69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SerranoYOLO/Pods-SerranoYOLO-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Serrano/Serrano.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Serrano.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SerranoYOLO/Pods-SerranoYOLO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C298D18A1D8944E4625D1C18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SerranoYOLO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DED092A5FC92505EE0939149 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SerranoYOLOTests/Pods-SerranoYOLOTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Serrano/Serrano.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Serrano.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SerranoYOLOTests/Pods-SerranoYOLOTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECD947CA9BBA3CA72869D919 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SerranoYOLO/Pods-SerranoYOLO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D43A80A51FC65BA5002BA300 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46E47B01FCB09F90088730C /* photoVC.swift in Sources */,
+				D43A80AD1FC65BA5002BA300 /* AppDelegate.swift in Sources */,
+				D44151411FD398EA00C8AB76 /* BoundingBox.swift in Sources */,
+				D445488F1FD62C8B003396AC /* extension.swift in Sources */,
+				D46E479C1FC9E4920088730C /* yolo.swift in Sources */,
+				D4B20FD31FD5A2CC00B53F4B /* VOC_classes.swift in Sources */,
+				D43A80D11FC65E8B002BA300 /* MainVC.swift in Sources */,
+				D441513A1FD348AA00C8AB76 /* COCO_classes.swift in Sources */,
+				D45284291FD1E6B50045DFFE /* ResultShowVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D43A80B91FC65BA5002BA300 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46E47A31FCA676A0088730C /* YoloModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D43A80BF1FC65BA5002BA300 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D43A80A81FC65BA5002BA300 /* SerranoYOLO */;
+			targetProxy = D43A80BE1FC65BA5002BA300 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D43A80B51FC65BA5002BA300 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D43A80B61FC65BA5002BA300 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D43A80C41FC65BA5002BA300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D43A80C51FC65BA5002BA300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D43A80C71FC65BA5002BA300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B0208928DAB19BCFF3C37B /* Pods-SerranoYOLO.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "SerranoYOLO/support files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhl.serranno.SerranoYOLO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D43A80C81FC65BA5002BA300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35261EC66A930EDDD535FFAA /* Pods-SerranoYOLO.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "SerranoYOLO/support files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhl.serranno.SerranoYOLO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D43A80CA1FC65BA5002BA300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61407043EFE3CD4AB9B5DC2D /* Pods-SerranoYOLOTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SerranoYOLOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhl.serranno.SerranoYOLOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SerranoYOLO.app/SerranoYOLO";
+			};
+			name = Debug;
+		};
+		D43A80CB1FC65BA5002BA300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1284B7F890C9D10F72F71690 /* Pods-SerranoYOLOTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SerranoYOLOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhl.serranno.SerranoYOLOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SerranoYOLO.app/SerranoYOLO";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D43A80A41FC65BA5002BA300 /* Build configuration list for PBXProject "SerranoYOLO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D43A80C41FC65BA5002BA300 /* Debug */,
+				D43A80C51FC65BA5002BA300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D43A80C61FC65BA5002BA300 /* Build configuration list for PBXNativeTarget "SerranoYOLO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D43A80C71FC65BA5002BA300 /* Debug */,
+				D43A80C81FC65BA5002BA300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D43A80C91FC65BA5002BA300 /* Build configuration list for PBXNativeTarget "SerranoYOLOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D43A80CA1FC65BA5002BA300 /* Debug */,
+				D43A80CB1FC65BA5002BA300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D43A80A11FC65BA5002BA300 /* Project object */;
+}
