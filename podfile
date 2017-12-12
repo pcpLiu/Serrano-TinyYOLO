@@ -1,11 +1,11 @@
 use_frameworks!
 platform :ios, '11.0'
 target 'SerranoYOLO' do
-  pod 'Serrano', '~> 0.1.5-alpha'
+  pod 'Serrano', '~> 0.1.6-alpha'
   pod 'SVProgressHUD'
 end
 
 target 'SerranoYOLOTests' do
-  pod 'Serrano', '~> 0.1.5-alpha'
+  pod 'Serrano', '~> 0.1.6-alpha'
   pod 'SVProgressHUD'
 end

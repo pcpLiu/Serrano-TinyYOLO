@@ -1,15 +1,15 @@
 PODS:
-  - Serrano (0.1.5-alpha)
+  - Serrano (0.1.6-alpha)
   - SVProgressHUD (2.2.2)
 
 DEPENDENCIES:
-  - Serrano (~> 0.1.5-alpha)
+  - Serrano (~> 0.1.6-alpha)
   - SVProgressHUD
 
 SPEC CHECKSUMS:
-  Serrano: 40cf179995e38094d16cb3208ef089ec2c2e9b2d
+  Serrano: 65511b17a9cd461cefb10ff0b2409ea2568b067a
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
 
-PODFILE CHECKSUM: 2443b0efa00ea917267208eb54b969b96f4669b8
+PODFILE CHECKSUM: 9735378d22064e2cd8080fe8fca62a17ec48ad64
 
 COCOAPODS: 1.3.1
