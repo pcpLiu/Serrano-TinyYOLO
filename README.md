@@ -3,7 +3,7 @@
 This is a demo project implementing TinyYOLO with [Serrano](https://github.com/pcpLiu/Serrano). It could do object recognition on 20 object classes.
 
 Example result:
-![logo](https://github.com/pcpLiu/Serrano-TinyYOLO/blob/master/demo_result.jpg)
+<img src="https://github.com/pcpLiu/Serrano-TinyYOLO/blob/master/demo_result.jpg" width="500" />
 
 
 
